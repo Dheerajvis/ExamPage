@@ -78,6 +78,7 @@ input[type='checkbox'] + label {
   display: flex;
   align-items: center;
   transition: 0.2s;
+  font-weight: 400;
 }
 
 input[type='checkbox'] {
@@ -202,6 +203,7 @@ h3 {
   .que_container {
     margin: 3% auto auto auto;
     height: 300px;
+    width: 75%;
   }
 
   .aside {
