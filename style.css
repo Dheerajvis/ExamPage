@@ -202,8 +202,15 @@ h3 {
 }
 
 @media (max-width: 740px) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   main {
+    position: absolute;
     flex-direction: column;
+    z-index: -1;
+    margin: 66px auto auto auto;
   }
   .que_container {
     margin: 3% auto auto auto;
@@ -263,7 +270,7 @@ h3 {
     background: #2ab771;
   }
   .warning {
-    display: inline;
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
