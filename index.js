@@ -87,11 +87,11 @@ function checkOptA() {
   ) {
     score++;
     checkA.checked = false;
-    console.log('Correct ans');
+    // console.log('Correct ans');
   } else {
     checkA.checked = false;
     runningQuestionIndex + 1;
-    console.log('Wrong ans');
+    // console.log('Wrong ans');
   }
 }
 
@@ -103,11 +103,11 @@ function checkOptB() {
   ) {
     score++;
     checkB.checked = false;
-    console.log('Correct ans');
+    // console.log('Correct ans');
   } else {
     checkB.checked = false;
     runningQuestionIndex + 1;
-    console.log('Wrong ans');
+    // console.log('Wrong ans');
   }
 }
 
@@ -119,11 +119,11 @@ function checkOptC() {
   ) {
     score++;
     checkC.checked = false;
-    console.log('Correct ans');
+    // console.log('Correct ans');
   } else {
     checkC.checked = false;
     runningQuestionIndex + 1;
-    console.log('Wrong ans');
+    // console.log('Wrong ans');
   }
 }
 
@@ -135,11 +135,11 @@ function checkOptD() {
   ) {
     score++;
     checkD.checked = false;
-    console.log('Correct ans');
+    // console.log('Correct ans');
   } else {
     checkD.checked = false;
     runningQuestionIndex + 1;
-    console.log('Wrong ans');
+    // console.log('Wrong ans');
   }
 }
 
@@ -170,7 +170,7 @@ function skipQue() {
   if (runningQuestionIndex <= lastQuestionIndex) {
     renderQuestion();
     qDone();
-    console.log(runningQuestionIndex);
+    // console.log(runningQuestionIndex);
   } else {
     printScore();
   }
