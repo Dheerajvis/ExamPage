@@ -47,7 +47,7 @@ var questions = [
 let lastQuestionIndex = questions.length - 1;
 let runningQuestionIndex = 0;
 let score = 0;
-let count = 0;
+let count = -1;
 
 renderQuestion();
 progressRender();
@@ -81,73 +81,68 @@ function printScore() {
 
 //options A checking
 function checkOptA() {
-  if (
-    checkA.checked &&
-    checkA.id == questions[runningQuestionIndex - 1].correct
-  ) {
+  count++;
+  console.log(count);
+  if (checkA.checked && checkA.id == questions[count].correct) {
     score++;
     checkA.checked = false;
-    // console.log('Correct ans');
+    console.log('Correct ans');
   } else {
     checkA.checked = false;
     runningQuestionIndex + 1;
-    // console.log('Wrong ans');
+    console.log('Wrong ans');
   }
 }
 
 //options B checking
 function checkOptB() {
-  if (
-    checkB.checked &&
-    checkB.id == questions[runningQuestionIndex - 1].correct
-  ) {
+  count++;
+  console.log(count);
+  if (checkB.checked && checkB.id == questions[count].correct) {
     score++;
     checkB.checked = false;
-    // console.log('Correct ans');
+    console.log('Correct ans');
   } else {
     checkB.checked = false;
     runningQuestionIndex + 1;
-    // console.log('Wrong ans');
+    console.log('Wrong ans');
   }
 }
 
 //options C checking
 function checkOptC() {
-  if (
-    checkC.checked &&
-    checkC.id == questions[runningQuestionIndex - 1].correct
-  ) {
+  count++;
+  console.log(count);
+  if (checkC.checked && checkC.id == questions[count].correct) {
     score++;
     checkC.checked = false;
-    // console.log('Correct ans');
+    console.log('Correct ans');
   } else {
     checkC.checked = false;
     runningQuestionIndex + 1;
-    // console.log('Wrong ans');
+    console.log('Wrong ans');
   }
 }
 
 //options D checking
 function checkOptD() {
-  if (
-    checkD.checked &&
-    checkD.id == questions[runningQuestionIndex - 1].correct
-  ) {
+  count++;
+  console.log(count);
+  if (checkD.checked && checkD.id == questions[count].correct) {
     score++;
     checkD.checked = false;
-    // console.log('Correct ans');
+    console.log('Correct ans');
   } else {
     checkD.checked = false;
     runningQuestionIndex + 1;
-    // console.log('Wrong ans');
+    console.log('Wrong ans');
   }
 }
 
 //Submit button function
 function submitQue() {
-  runningQuestionIndex++;
-
-  if (runningQuestionIndex <= lastQuestionIndex) {
+  if (runningQuestionIndex < lastQuestionIndex) {
+    runningQuestionIndex++;
     renderQuestion();
     qDone();
     if (checkA.checked) {
