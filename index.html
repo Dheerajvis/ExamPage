@@ -8,113 +8,82 @@
     <title>CBSC Test</title>
   </head>
   <body>
+    <div id="start" style="display:none;"><p>Start</p></div>
+    <div id="totalScore" class="score" style="display:none;">
+      <h1 id="scoreHere"></h1>
+    </div>
+    <div id="main_container">
+      <header class="header">
+        <h2 id="studentName">Student Name</h2>
+      </header>
+      <main>
+        <div class="que_container item1">
+          <h3 id="question"></h3>
+          <ul id="ul">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ans_selection[]"
+                value="id1"
+                id="A"
+              />
+              <label for="A"><p id="optA"></p></label>
+            </li>
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ans_selection[]"
+                value="id2"
+                id="B"
+              />
+              <label for="B"><p id="optB"></p></label>
+            </li>
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ans_selection[]"
+                value="id3"
+                id="C"
+              />
+              <label for="C"><p id="optC"></p></label>
+            </li>
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ans_selection[]"
+                value="id4"
+                id="D"
+              />
+              <label for="D"><p id="optD"></p></label>
+            </li>
+          </ul>
+          <div id="button">
+            <button class="btn" id="submitBtn">
+              Submit
+            </button>
+            <button class="btn" id="skipBtn">Skip</button>
+          </div>
+        </div>
+        <div class="aside item2">
+          <div class="asideTop">
+            <h4 class="btn2">No. of Questions</h4>
+            <h3 id="timer">02:56 sec</h3>
+          </div>
+          <div class="numBox">
+            <div id="progressTab" class="questionsTab"></div>
+          </div>
+        </div>
+      </main>
+    </div>
     <div class="warning">
       <p>
         Your display is very small
       </p>
     </div>
-    <header class="header">
-      <h2 id="studentName">Student Name</h2>
-    </header>
-    <main>
-      <div class="que_container item1">
-        <h3 id="question">11. Question number one will be here?</h3>
-        <ul id="ul">
-          <li>
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="ans_selection[]"
-              value="id1"
-              onclick="return KeepCount()"
-              id="id01"
-            />
-            <label for="id01"><p>Option one here</p></label>
-          </li>
-          <li>
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="ans_selection[]"
-              value="id2"
-              onclick="return KeepCount()"
-              id="id02"
-            />
-            <label for="id02"><p>Option two here</p></label>
-          </li>
-          <li>
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="ans_selection[]"
-              value="id3"
-              onclick="return KeepCount()"
-              id="id03"
-            />
-            <label for="id03"><p>Option three here</p></label>
-          </li>
-          <li>
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="ans_selection[]"
-              value="id4"
-              onclick="return KeepCount()"
-              id="id04"
-            />
-            <label for="id04"><p>Option four here</p></label>
-          </li>
-        </ul>
-        <div id="button">
-          <button class="btn" id="submitBtn">Submit</button>
-          <button class="btn" id="skipBtn">Skip</button>
-        </div>
-      </div>
-      <div class="aside item2">
-        <div class="asideTop">
-          <h4 class="btn2">No. of Questions</h4>
-          <h3 id="timer">02:56 sec</h3>
-        </div>
-        <div class="numBox">
-          <div class="questionsTab">
-            <div class="boxDone">1</div>
-            <div class="boxDone">2</div>
-            <div class="boxDone">3</div>
-            <div class="boxDone">4</div>
-            <div class="boxDone">5</div>
-            <div class="boxDone">6</div>
-            <div class="boxDone">7</div>
-            <div class="boxDone">8</div>
-            <div class="boxDone">9</div>
-            <div class="boxDone">10</div>
-            <div class="boxDone">11</div>
-            <div class="box">12</div>
-            <div class="box">13</div>
-            <div class="box">14</div>
-            <div class="box">15</div>
-            <div class="box">16</div>
-            <div class="box">17</div>
-            <div class="box">18</div>
-            <div class="box">19</div>
-            <div class="box">20</div>
-            <div class="box">21</div>
-            <div class="box">22</div>
-            <div class="box">23</div>
-            <div class="box">24</div>
-            <div class="box">25</div>
-            <div class="box">26</div>
-            <div class="box">28</div>
-            <div class="box">29</div>
-            <div class="box">30</div>
-            <div class="box">31</div>
-            <div class="box">32</div>
-            <div class="box">33</div>
-            <div class="box">34</div>
-            <div class="box">35</div>
-          </div>
-        </div>
-      </div>
-    </main>
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
